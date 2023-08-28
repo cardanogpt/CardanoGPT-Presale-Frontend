@@ -1,0 +1,65 @@
+{
+  "hash": "788810b4",
+  "browserHash": "58f87daf",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "f20e1e5e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c0d014c0",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "eb799e23",
+      "needsInterop": false
+    },
+    "buffer": {
+      "src": "../../node_modules/buffer/index.js",
+      "file": "buffer.js",
+      "fileHash": "dd9dc9a3",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "c908c298",
+      "needsInterop": false
+    },
+    "@emurgo/cardano-serialization-lib-asmjs": {
+      "src": "../../node_modules/@emurgo/cardano-serialization-lib-asmjs/cardano_serialization_lib.js",
+      "file": "@emurgo_cardano-serialization-lib-asmjs.js",
+      "fileHash": "5f410e5e",
+      "needsInterop": false
+    },
+    "react-hot-toast": {
+      "src": "../../node_modules/react-hot-toast/dist/index.mjs",
+      "file": "react-hot-toast.js",
+      "fileHash": "ed5ae885",
+      "needsInterop": false
+    },
+    "@headlessui/react": {
+      "src": "../../node_modules/@headlessui/react/dist/headlessui.esm.js",
+      "file": "@headlessui_react.js",
+      "fileHash": "c96b533a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-GDXUS66K": {
+      "file": "chunk-GDXUS66K.js"
+    },
+    "chunk-YDMPIDXF": {
+      "file": "chunk-YDMPIDXF.js"
+    },
+    "chunk-WNKWOKNR": {
+      "file": "chunk-WNKWOKNR.js"
+    }
+  }
+}

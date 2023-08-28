@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #101418;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/background.svg");
+  font-family: "Plus Jakarta Sans", sans-serif;
+  position: relative;
+}
+
+.green_gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 119, 93, 0.5) 0%,
+    rgba(1, 204, 156, 0) 100%
+  );
+}
+
+
+.green_gradientP{
+  background: linear-gradient(180deg, rgba(7, 119, 93, 0.50) 0%, rgba(1, 204, 156, 0.00) 100%);
+}
+
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.gradient_text{
+  background: linear-gradient(180deg, #01CC9C 0%, rgba(20, 198, 222, 0.65) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.typhon{
+  background: linear-gradient(to right, rgb(49, 83, 203) 0%, rgb(255, 255, 255) 100%);
+}
+
+.typhoncip30{
+  background: linear-gradient(to right, rgb(49, 83, 203) 0%, rgb(255, 255, 255) 100%);
+}
+.eternl{
+  background: linear-gradient(to right, rgb(255, 194, 4) 0%, rgb(254, 78, 113) 15%, rgb(151, 93, 254) 50%, rgb(93, 185, 255) 75%, rgb(81, 252, 187) 100%)
+}
+
+.nami{
+  background: linear-gradient(to right, rgb(52, 158, 163) 0%, rgb(251, 211, 141) 100%);
+}
+
+.lace{
+  background: linear-gradient(to right, rgb(255, 97, 0) 0%, rgb(255, 147, 30) 50%, rgb(255, 255, 255) 100%);
+}
