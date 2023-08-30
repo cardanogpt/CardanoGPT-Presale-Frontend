@@ -146,7 +146,7 @@ export default function Navbar({
                     <Link
                     to={"https://zealy.io/c/replyada"}
                     target="_blank"
-                    className="green_gradient disabled:cursor-not-allowed flex text-center items-center gap-4 justify-center my-4 buy p-2.5 w-full text-white rounded-md text-sm border border-[#01CC9C]"
+                    className="green_gradient disabled:cursor-not-allowed flex text-center items-center gap-4 justify-center my-4 buy p-2.5 text-white rounded-md text-sm border border-[#01CC9C]"
                   >
                     Join Whitelist
                   </Link>
