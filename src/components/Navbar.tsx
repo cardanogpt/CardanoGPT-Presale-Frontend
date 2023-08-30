@@ -74,7 +74,7 @@ export default function Navbar({
                   target="_blank"
                   className="leading-3 hidden w-56 h-12 md:flex items-center px-4 text-center rounded-md border-[#14E8B6] green_gradient border text-white "
                 >
-                  Join our whitelist
+                  Join whitelist
                 </Link>
                   // <button
                   //   onClick={openWalletConnect}
@@ -148,7 +148,7 @@ export default function Navbar({
                     target="_blank"
                     className="green_gradient disabled:cursor-not-allowed flex items-center gap-4 justify-center my-4 buy p-2.5 w-full text-white rounded-md text-sm border border-[#01CC9C]"
                   >
-                    Join our whitelist
+                    Join whitelist
                   </Link>
                     // <button
                     //   onClick={openWalletConnect}
