@@ -106,7 +106,7 @@ const Hero = ({
                 Maximum Buy: 10,000 ADA
               </p>
               <p className="text-white  font-medium text-sm">
-                Softcap: 150,000 ADA
+                Softcap: 100,000 ADA
               </p>
               <p className="text-white  font-medium text-sm">
                 Hardcap: 275,000 ADA
