@@ -52,7 +52,7 @@ const Hero = ({
       if (data.data.length === 0) {
         return setLeftTokens(0);
       }
-      let total = data.data[0].totalAmount;
+      //let total = data.data[0].totalAmount;
       //setLeftTokens(total);
       setLeftTokens(0);
     })();
