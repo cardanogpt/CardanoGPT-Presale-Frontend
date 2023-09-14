@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 const Presale = () => {
   const [remainingTime, setRemainingTime] = useState(0);
   useEffect(() => {
-    const targetDate = new Date("September 15, 2023");
+    const targetDate = new Date("2023-09-15T18:00:00Z");
     targetDate.setDate(targetDate.getDate() + 0
     );
 
