@@ -47,7 +47,7 @@ const Hero = ({
   useEffect(() => {
     (async () => {
       let { data } = await axios.get(
-        "https://eon.onrender.com/api/transactions/getall"
+        "https://cgi-backend.onrender.com/api/transactions/getall"
       );
       if (data.data.length === 0) {
         return setLeftTokens(0);

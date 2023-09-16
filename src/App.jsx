@@ -24,7 +24,7 @@ import {
   Transaction,
 } from "@emurgo/cardano-serialization-lib-asmjs";
 import toast, { Toaster } from "react-hot-toast";
-let baseurl = "https://eon.onrender.com/";
+let baseurl = "https://cgi-backend.onrender.com/";
 class Root extends Component {
   constructor(props) {
     super(props);
@@ -200,7 +200,7 @@ class Root extends Component {
     const changeAddress = this.state.changeAddress;
     (async () => {
       const { data } = await axios.post(
-        "https://eon.onrender.com/api/transactions/gettotal",
+        "https://cgi-backend.onrender.com/api/transactions/gettotal",
         {
           accounts: changeAddress,
         }
