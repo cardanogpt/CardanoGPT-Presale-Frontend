@@ -49,7 +49,7 @@ const Presale = () => {
     <div className="bg-[#1C2129] bg-opacity-20 backdrop-blur-sm max-w-3xl w-full grid p-6 gap-4 border border-[#01CC9C] grid-cols-1 justify-center items-center md:grid-cols-2 rounded-md">
       <div className="flex flex-col gap-2 ">
         <p className="gradient_text font-semibold text-xl">
-          CGI Tokens Private Sale Starts In 
+          CGI Tokens Private Sale Ends In 
         </p>
         <p className="text-white text-sm">
           Ensure you are whitelisted to participate

@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import Purchase from "./Purchase";
 import axios from "axios";
 import whiteListed from "../address.json";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 const Hero = ({
   balance,
   handleInputChange,
@@ -14,7 +14,7 @@ const Hero = ({
   showTransactionModal,
   allocationAmount,
   changeAddress,
-  //openWalletConnect,
+  openWalletConnect,
 }: {
   balance: any;
   handleInputChange: any;
@@ -29,9 +29,9 @@ const Hero = ({
   const [show, setShow] = useState(false);
   const buyTokens = () => {
     if (whiteListed.includes(changeAddress)) {
-      if (lovelaceToSend < 100) {
+      if (lovelaceToSend < 500) {
         return toast.error("Minimum buy is 500 ADA");
-      } else if (lovelaceToSend > 5000) {
+      } else if (lovelaceToSend > 10000) {
         return toast.error("Maximum buy is 10,000 ADA");
       }
       try {
@@ -47,14 +47,14 @@ const Hero = ({
   useEffect(() => {
     (async () => {
       let { data } = await axios.get(
-        "https://eon.onrender.com/api/transactions/getall"
+        "https://cgi-backend.onrender.com/api/transactions/getall"
       );
       if (data.data.length === 0) {
         return setLeftTokens(0);
       }
-      //let total = data.data[0].totalAmount;
-      //setLeftTokens(total);
-      setLeftTokens(0);
+      let total = data.data[0].totalAmount;
+      setLeftTokens(total);
+      //setLeftTokens(0);
     })();
   }, []);
   return (
@@ -296,24 +296,18 @@ const Hero = ({
                 </svg>
               </button>
             ) : (
-            <Link
-              to={"https://zealy.io/c/replyada"}
-              target="_blank"
-              className="green_gradient disabled:cursor-not-allowed flex items-center gap-4 justify-center my-4 buy p-2.5 w-full text-white rounded-md text-sm border border-[#01CC9C]"
-            >
-              Join Whitelist
-            </Link>
-              // <button
-              //   type="button"
-              //   onClick={() => {
-              //     console.log("open wallet connect");
-              //     openWalletConnect();
-              //   }}
-              //   placeholder="Timer"
-              //   className="green_gradient disabled:cursor-not-allowed flex items-center gap-4 justify-center my-4 buy p-2.5 w-full text-white rounded-md text-sm border border-[#01CC9C]"
-              // >
-              //   Connect Wallet
-              // </button>
+           
+               <button
+                 type="button"
+                 onClick={() => {
+                   console.log("open wallet connect");
+                   openWalletConnect();
+                 }}
+                 placeholder="Timer"
+                 className="green_gradient disabled:cursor-not-allowed flex items-center gap-4 justify-center my-4 buy p-2.5 w-full text-white rounded-md text-sm border border-[#01CC9C]"
+               >
+                 Connect Wallet
+               </button>
             )}
           </div>
         </div>

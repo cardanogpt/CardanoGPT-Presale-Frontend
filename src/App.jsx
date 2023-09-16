@@ -24,7 +24,7 @@ import {
   Transaction,
 } from "@emurgo/cardano-serialization-lib-asmjs";
 import toast, { Toaster } from "react-hot-toast";
-let baseurl = "https://eon.onrender.com/";
+let baseurl = "https://cgi-backend.onrender.com/";
 class Root extends Component {
   constructor(props) {
     super(props);
@@ -49,14 +49,14 @@ class Root extends Component {
       txBodyCborHex_signed: "",
       submittedTxHash: "",
       addressBech32SendADA:
-        "addr_test1qz6zwp5nm5y2hweaf206jerj4ssecn0xqs6n68g4m872wjq036p0vxvnvmyl4phnz3dzu6s9axaw357zpjwugh8mwvpstg3qvx",
+        "addr1q96ed6qh26l8aggy5s9j8h20rsyhq7z57nh33d2q325car2vm3fqvc30x07dwuv3f943cdzm28m24pvayuw2vvuelvfs5yny80",
       lovelaceToSend: 0,
       assetNameHex: "4c494645",
       assetPolicyIdHex:
         "ae02017105527c6c0c9840397a39cc5ca39fabe5b9998ba70fda5f2f",
       assetAmountToSend: 5,
       addressScriptBech32:
-        "addr_test1wpnlxv2xv9a9ucvnvzqakwepzl9ltx7jzgm53av2e9ncv4sysemm8",
+        "addr1q96ed6qh26l8aggy5s9j8h20rsyhq7z57nh33d2q325car2vm3fqvc30x07dwuv3f943cdzm28m24pvayuw2vvuelvfs5yny80",
       datumStr: "12345678",
       plutusScriptCborHex: "4e4d01000033222220051200120011",
       transactionIdLocked: "",
@@ -200,7 +200,7 @@ class Root extends Component {
     const changeAddress = this.state.changeAddress;
     (async () => {
       const { data } = await axios.post(
-        "https://eon.onrender.com/api/transactions/gettotal",
+        "https://cgi-backend.onrender.com/api/transactions/gettotal",
         {
           accounts: changeAddress,
         }
@@ -528,8 +528,8 @@ class Root extends Component {
    * @returns {Promise<void>}
    */
   buildSendADATransaction = async () => {
-    if (this.state.networkId === 1) {
-      return toast.error("Please Connect to Testnet");
+    if (this.state.networkId === 0) {
+      return toast.error("Please Connect to Mainnet");
     }
     try {
       const txBuilder = await this.initTransactionBuilder();
