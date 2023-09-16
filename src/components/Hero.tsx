@@ -29,9 +29,9 @@ const Hero = ({
   const [show, setShow] = useState(false);
   const buyTokens = () => {
     if (whiteListed.includes(changeAddress)) {
-      if (lovelaceToSend < 100) {
+      if (lovelaceToSend < 500) {
         return toast.error("Minimum buy is 500 ADA");
-      } else if (lovelaceToSend > 5000) {
+      } else if (lovelaceToSend > 10000) {
         return toast.error("Maximum buy is 10,000 ADA");
       }
       try {
