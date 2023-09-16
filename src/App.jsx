@@ -528,8 +528,8 @@ class Root extends Component {
    * @returns {Promise<void>}
    */
   buildSendADATransaction = async () => {
-    if (this.state.networkId === 1) {
-      return toast.error("Please Connect to Testnet");
+    if (this.state.networkId === 0) {
+      return toast.error("Please Connect to Mainnet");
     }
     try {
       const txBuilder = await this.initTransactionBuilder();
