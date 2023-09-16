@@ -69,8 +69,14 @@ export default function Navbar({
                     {changeAddress?.slice(0, 6)}...{changeAddress?.slice(-4)}
                   </button>
                 ) : (
-                  
-                   <button
+                  <Link
+                  to={"https://zealy.io/c/replyada"}
+                  target="_blank"
+                  className="leading-3 hidden w-56 h-12 md:flex items-center px-4 text-center rounded-md border-[#14E8B6] green_gradient border text-white "
+                >
+                  Join Whitelist
+                </Link>
+                   /*<button
                      onClick={openWalletConnect}
                      className="leading-3 hidden w-56 h-12 md:flex items-center px-4 text-center rounded-md border-[#14E8B6] green_gradient border text-white "
                    >
@@ -78,7 +84,7 @@ export default function Navbar({
                      <span className="ml-2">
                        <img src="/assets/Vector.svg" width={14} height={14} />
                      </span>
-                   </button>
+                   </button>*/
                 )}
                 <div className="flex md:hidden  items-center justify-between w-full md:w-auto">
                   <img
