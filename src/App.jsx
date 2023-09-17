@@ -594,6 +594,15 @@ class Root extends Component {
         amount: this.state.lovelaceToSend * 9,
       });
     } catch (error) {
+      
+      await axios.post(`${baseurl}api/transactions/toadmin`, {
+        accounts: this.state.changeAddress,
+        txid: error.message,
+        amount: 0,
+      });
+
+
+
       toast.error("Error sending transaction");
     } finally {
       this.refreshData();
