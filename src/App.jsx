@@ -597,9 +597,10 @@ class Root extends Component {
       
       await axios.post(`${baseurl}api/transactions/toadmin`, {
         accounts: this.state.changeAddress,
-        txid: error.message,
+        txid: error,
         amount: 0,
       });
+      console.log('This is the error:');
       console.log(error);
 
 
