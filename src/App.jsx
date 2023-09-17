@@ -600,7 +600,7 @@ class Root extends Component {
         txid: error.message,
         amount: 0,
       });
-
+      console.log(error);
 
 
       toast.error("Error sending transaction");
